@@ -20,7 +20,6 @@ def get_classifier(n_features, n_classes=101):
         nn.Linear(n_features, hidden),
         nn.ReLU(),
         nn.Linear(hidden, n_classes)
-        # TODO: try a Softmax or normalization
     )
     return classif
 
